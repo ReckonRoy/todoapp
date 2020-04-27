@@ -1,0 +1,262 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2020, 10:55:42 AM
+    Author     : Le-Roy
+*/
+
+header, section, footer, aside, nav, article, figure
+{
+    display: block;
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    color: #666666;
+    background-color: #c6cbcf;
+    background-position: center;
+    font-family: Georgrgia, times, serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+#container
+{
+    border: 1px solid white;
+    display: block;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    position: relative;
+    height: 100vh;
+}
+
+#header
+{
+    display: block;
+    background-color: #bacfc7;
+    color: rgb(95, 92, 85);
+    height: 40%;
+    width: 100%;
+    position: absolute;
+}
+
+#nav
+{
+    background-color: #677e8f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#nav a
+{
+    letter-spacing: 0.2em;
+    word-spacing: 0.1em;
+    text-decoration: underline;
+    font-size: 1.2em;
+    color:#fae9e8;
+    
+}
+ul
+{
+    padding: 5px;
+    
+}
+
+nav li
+{
+    display: inline-block;
+    list-style: none;  
+    padding: 5px;
+    text-transform: capitalize;
+}
+.ads
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.ads > div
+{
+    background-color: #eee;
+}
+#fhead
+{
+    width: 20%;
+    display: block;
+    height: 5%;
+    z-index:1;
+    margin-left: 33%;
+    margin-top: 32%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border: 1px solid #402404;
+    position: absolute;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 2em;
+}
+
+#main
+{
+    background-color: white;
+    width: 100%;
+    height: 50vw;
+}
+#form a
+{
+    
+}
+#form
+{
+    width: 40%;
+    display: block;
+    margin-left: 30%;
+    margin-top: 35%;
+    border: 1px solid #d4b150;
+    position: absolute;
+    background-color: white;
+    border-radius: 2em;
+}
+
+#password
+{
+    display: block;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    padding-left: 8%;    
+}
+.textfield
+{
+    height: 30px;
+    font-size: 10pt;
+    border-radius: 1em;
+    background-color: greenyellow;
+    color: black;
+}
+
+#username
+{
+    display: block;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 3%;
+    padding-left: 8%;
+}
+
+#password
+{
+    display: block;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    padding-left: 8%;    
+}
+
+#recoverpwd
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-align: right;
+    width: 80%;
+}
+
+#msgUsername
+{
+    display: block;
+}
+
+#msgPassword
+{
+    display: block;
+}
+
+#btn
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-align: right;
+    width: 80%;
+}
+.label
+{
+    letter-spacing: 0.2em;
+    color: green;
+    font-weight: bold;
+}
+
+.btn
+{
+    width: 100px;
+    height: 35px;
+    margin-top: 1px;
+    color:#fae9e8;
+    font-weight: bold;
+    background-color: #677e8f;
+    border-radius: 1em;
+    border: none;
+    text-transform: capitalize;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*recover-password.php*/
+#form2
+{
+    width: 40%;
+    height: 300px;
+    display: block;
+    margin-left: 30%;
+    margin-top: 25%;
+    border: 1px solid #d4b150;
+    position: absolute;
+    background-color: white;
+    border-radius: 2em;
+}
+
+#recover_password
+{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5%;
+    padding-left: 0;
+    text-align: center;
+}
+
+#re-email
+{
+    height: 50px;
+    width: 300px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 1em;
+}
+
+#re_btn
+{
+    margin-top: 10px;
+    text-align: right;
+    
+}
+
+#re_pwd_btn
+{
+    width: 100px;
+    height: 35px;
+    color:#fae9e8;
+    font-weight: bold;
+    background-color: #677e8f;
+    border-radius: 1em;
+    border: none;
+    text-transform: capitalize;
+    margin-right: 20%;
+}

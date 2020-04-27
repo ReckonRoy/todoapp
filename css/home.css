@@ -1,0 +1,179 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Apr 2020, 1:28:23 PM
+    Author     : Le-Roy
+*/
+
+header, section, footer, aside, nav, article, figure
+{
+    display: block;
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    color: #666666;
+    background-color: #c6cbcf;
+    background-position: center;
+    font-family: Georgrgia, times, serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+#container
+{
+    border: 1px solid white;
+    display: block;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    position: relative;
+    height: 100vh;
+}
+
+#header
+{
+    display: block;
+    background-color: #bacfc7;
+    color: rgb(95, 92, 85);
+    height: 40%;
+    width: 100%;
+}
+
+#nav
+{
+    background-color: #677e8f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#nav a
+{
+    letter-spacing: 0.2em;
+    word-spacing: 0.1em;
+    text-decoration: underline;
+    font-size: 1.2em;
+    color:#fae9e8;
+    
+}
+ul
+{
+    padding: 5px;
+    
+}
+
+nav li
+{
+    display: inline-block;
+    list-style: none;  
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+#main
+{
+    
+    background-color: white;
+    width: 100%;
+}
+
+#wrapper
+{
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 25%;
+}
+
+#add_btn_div
+{
+    width: 100%;
+    margin-top: 10%;
+}
+
+#add_btn
+{
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+    border-radius: 1em;
+    background-color: #677e8f;
+    height: 35px;
+}
+
+#track_btn_div
+{
+    width: 100%;
+    margin-top: 5%;
+}
+
+#track_btn
+{
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+    border-radius: 1em;
+    background-color: #677e8f;
+    height: 35px;
+}
+
+#form
+{
+    width: 100%;
+    display: block;
+    border: 1px solid #d4b150;
+    background-color: white;
+    border-radius: 2em;
+    margin-top: 20%;
+}
+
+#title_div
+{
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 2%;
+}
+
+#task_title
+{
+    width: 50%;
+    height: 30px;
+}
+
+#time_div
+{
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 2%;
+}
+#task_div
+{
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 2%;
+}
+#task_sub_div
+{
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#task_btn
+{
+    width: 30%;
+    height: 10%;
+    background-color: #bacfc7;
+    border-radius: 1em;
+}

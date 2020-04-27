@@ -1,0 +1,187 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 22, 2020, 2:56:23 PM
+    Author     : Reckon
+*/
+header, section, footer, aside, article, nav, figure
+{
+    display: block;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    color: #666666;
+    background-color: #c6cbcf;
+    background-position: center;
+    font-family: Georgrgia, times, serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+#container
+{
+    border: 1px solid white;
+    display: block;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    position: relative;
+    height: 100vh;
+    background-color: white;
+}
+
+#header
+{
+    display: block;
+    background-color: #bacfc7;
+    color: rgb(95, 92, 85);
+    width: 100%;
+}
+
+#nav
+{
+    background-color: #677e8f;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#nav a
+{
+    letter-spacing: 0.2em;
+    word-spacing: 0.1em;
+    text-decoration: underline;
+    font-size: 1.2em;
+    color:#fae9e8;
+    
+}
+ul
+{
+    padding: 5px;
+    
+}
+
+nav li
+{
+    display: inline-block;
+    list-style: none;  
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+#fhead
+{
+    width: 20%;
+    display: block;
+    height: 5%;
+    z-index:1;
+    margin-left: 33%;
+    margin-top: 32%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: white;
+    border: 1px solid #402404;
+    position: absolute;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 2em;
+}
+
+#section
+{
+    background-color: white;
+    width: 100%;
+}
+
+#form_f
+{
+    margin-top: 20px;
+    width: 40%;
+    display: block;
+    margin-left: 30%;
+    border: 1px solid #d4b150;
+    background-color: white;
+    border-radius: 2em;
+}
+
+#nameField
+{
+    width: 100%;
+    margin-top: 5%;
+}
+#surnameField
+{
+    width: 100%;
+    margin-top: 5%;
+}
+#usernameField
+{
+    width: 100%;
+    margin-top: 5%;
+}
+#pwdField
+{
+    width: 100%;
+    margin-top: 5%;
+}
+#cpwdField
+{
+    width: 100%;
+    margin-top: 5%;
+}
+#emailField
+{
+    width: 100%;
+    margin-top: 5%;
+}
+#register_btn_div
+{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#register_btn
+{
+    width: 100px;
+    height: 35px;
+    margin-top: 1px;
+    color:#fae9e8;
+    font-weight: bold;
+    background-color: #677e8f;
+    border-radius: 1em;
+    border: none;
+    text-transform: capitalize;
+    margin-left: 5%;
+}
+label
+{
+    display: block;
+    margin-left: 5%;
+}
+#form_f input[type=text]
+{
+    width: 50%;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    border-radius: 1em;
+    border: 1px solid #677e8f;
+    margin-left: 5%;
+    padding: 3px 3px;
+}
+
+#form_f input[type=text]:focus
+{
+    width: 60%;
+    height: 30px;
+    padding: 5x 5px;
+    border-radius: 1em;
+}
+
