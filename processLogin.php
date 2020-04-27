@@ -15,27 +15,25 @@ if(isset($_POST['username']) && isset($_POST['password']))
 {
     if(!empty($_POST['username']) && !empty($_POST['password']))
     {
-        echo $_POST['username'];
         $username = mysql_entities_fix_string($connection, $_POST['username']);
         $password = mysql_entities_fix_string($connection, $_POST['password']);
         
-        $query = "SELECT password FROM user_data username='$password'";
+        $query = "SELECT password, name, surname FROM user_data WHERE username='$username'";
         $result = $connection->query($query);
         if(!$result)
         {
             die($connection->connect_error);
         }else if($result->num_rows)
         {
-            $row = $result->fetch_array(MYSQL_ASSOC);
-                $result->close();
+            $row = $result->fetch_array(MYSQLI_ASSOC);
 
                 $salt1 = "qm&h*";
                 $salt2 = "ph!@";
-                $token = hash('ripemd128', "$salt1$salt2");
-
-                if($token == $row['password'])
+                $token = hash('ripemd128', "$salt1$password$salt2");
+                echo "password ". $row['password'];
+                if( $row['password']==$token)
                 {
-                    echo $row['name']." ".$surname;  
+                    echo $row['name'];  
                 }else
                 {
                     die("Inavalid username/password combination");
