@@ -49,17 +49,30 @@ and open the template in the editor.
                             <div id="task_div">
                                 <label for="description">Description</label>
                                 <br>
-                                <textarea cols="50" rows="10" name="task_descr"></textarea>
+                                <textarea cols="50" rows="5" name="task_descr"></textarea>
                             </div>
                             <div id="task_sub_div">
                                 <input type="submit" id="task_btn" value="create task">
                             </div>
                         </form>
                     </div>
+                    
+                    <div>
+                        <div></div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Time</th><th>Title</th><th>Description</th>
+                                </tr>
+                                <tbody id="data"><!-- data will be displayed here-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>>
-            <aside>
-
+            </div>
+            <aside id="div_aside">
+                <div><h1>Hello I am the aside</h1></div>
             </aside>
 
             <footer>
@@ -80,16 +93,12 @@ and open the template in the editor.
             
             // With the element initially shown, we can hide it slowly:
                 $( "#track_btn" ).click(function() {
-                  $( "#form" ).hide( "fast", function() {
-                    
-                  });
+                    $( "#form" ).hide( "fast");
                 });
                 
                 $( "#add_btn" ).click(function() {
-                  $( "#form" ).show( "fast", function() {
-                    
+                  $( "#form" ).show( "fast");
                   });
-                });
         </script>
     </body>
 </html>

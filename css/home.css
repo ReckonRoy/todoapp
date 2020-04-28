@@ -44,7 +44,6 @@ body
     display: block;
     background-color: #bacfc7;
     color: rgb(95, 92, 85);
-    height: 40%;
     width: 100%;
 }
 
@@ -80,22 +79,21 @@ nav li
 
 #main
 {
-    
     background-color: white;
-    width: 100%;
+    width: 60%;
+    float: left;
 }
 
 #wrapper
 {
-    width: 50%;
-    border: 1px solid black;
-    margin-left: 25%;
+    width: 100%;
+    margin-left: 0;
 }
 
 #add_btn_div
 {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #add_btn
@@ -131,7 +129,7 @@ nav li
     border: 1px solid #d4b150;
     background-color: white;
     border-radius: 2em;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 #title_div
@@ -177,4 +175,10 @@ nav li
     height: 10%;
     background-color: #bacfc7;
     border-radius: 1em;
+}
+#div_aside
+{
+    width: 30%;
+    border: 1px solid black;
+    float: right;
 }
