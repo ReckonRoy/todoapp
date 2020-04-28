@@ -71,7 +71,25 @@ and open the template in the editor.
         <?php
         // put your code here
         ?>
-        <script type="text/javascript" src="script/jquery.js"></script>
+        <script src="script/jquery.js"></script>
         <script type="text/javascript" src="home.js"></script>
+        <script type="text/javascript">
+            $( "#form" ).hide( "fast", function() {
+                    
+                  });
+            
+            // With the element initially shown, we can hide it slowly:
+                $( "#track_btn" ).click(function() {
+                  $( "#form" ).hide( "fast", function() {
+                    
+                  });
+                });
+                
+                $( "#add_btn" ).click(function() {
+                  $( "#form" ).show( "fast", function() {
+                    
+                  });
+                });
+        </script>
     </body>
 </html>
