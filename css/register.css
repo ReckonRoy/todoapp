@@ -57,6 +57,11 @@ body
     float:left;
     margin-top: 1%;
 }
+#header_cap
+{
+    text-align: center;
+}
+
 #nav
 {
     background-color: #677e8f;

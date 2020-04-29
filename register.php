@@ -21,7 +21,7 @@
         <div id="container">
             <!-- Header that contains nav section-->
             <header id="header">
-                <h1>Never let time ruin your efforts</h1>
+                <div id="header_cap"><h1>Never let time ruin your efforts</h1></div>
                 <!-- nav section-->
                 <nav id="nav">
                     <div id="logo_wrap">
