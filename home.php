@@ -14,10 +14,11 @@ and open the template in the editor.
         
         <div id="container">
             <header id="header">
-                <div>
-                    <div><img src="img/logo.jpg" alt="logo"></div><div><h1>TimeLess</h1></div> 
-                </div>
                 <nav id="nav">
+                    <div id="logo_wrap">
+                    <div id="logo"><img src="img/logo.jpg" alt="image here"></div>
+                    <div id="logocaption"><h1>TimeLess</h1></div>
+                    </div>
                     <ul>
                         <li><a href="Home.php">Home</a></li>
                         <li><a href="task-manager.php">Task Manager</a></li>
@@ -57,7 +58,7 @@ and open the template in the editor.
                         </form>
                     </div>
                     
-                    <div>
+                    <div id="task">
                         <div></div>
                         <div>
                             <table>
@@ -85,19 +86,20 @@ and open the template in the editor.
         // put your code here
         ?>
         <script src="script/jquery.js"></script>
-        <script type="text/javascript" src="home.js"></script>
+        <script type="text/javascript" src="script/home.js"></script>
         <script type="text/javascript">
-            $( "#form" ).hide( "fast", function() {
-                    
-                  });
+            $( "#form" ).hide( "fast");
+            $( "#task" ).hide( "fast");
             
             // With the element initially shown, we can hide it slowly:
                 $( "#track_btn" ).click(function() {
                     $( "#form" ).hide( "fast");
+                    $( "#task" ).show( "fast");
                 });
                 
                 $( "#add_btn" ).click(function() {
                   $( "#form" ).show( "fast");
+                  $( "#task" ).hide( "fast");
                   });
         </script>
     </body>

@@ -8,7 +8,6 @@
 
 function validateRegistration(form)
 {
-    alert("watsup");
     name_fail = validateName(form.name.value);
     surname_fail = validateSurname(form.surname.value);
     username_fail = validateUsername(form.username.value);

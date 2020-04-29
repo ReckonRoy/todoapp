@@ -47,12 +47,25 @@ body
     width: 100%;
     position: absolute;
 }
+#logo
+{
+    float:left;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #677e8f;
+}
 
+#logocaption{
+    float:left;
+    margin-top: 1%;
+}
 #nav
 {
+    clear: both;
     background-color: #677e8f;
     text-align: center;
     margin-top: 10px;
+    line-height: 2.5em;
 }
 
 #nav a
@@ -79,6 +92,7 @@ nav li
 }
 .ads
 {
+    clear: both;
     display: grid;
     grid-template-columns: auto auto auto;
 }

@@ -45,12 +45,24 @@ body
     color: rgb(95, 92, 85);
     width: 100%;
 }
+#logo
+{
+    float:left;
+    height: 50px;
+    margin-top: 5px;
+    background-color: #677e8f;
+}
 
+#logocaption{
+    float:left;
+    margin-top: 1%;
+}
 #nav
 {
     background-color: #677e8f;
     text-align: center;
     margin-top: 10px;
+    line-height: 2.5em;
 }
 
 #nav a

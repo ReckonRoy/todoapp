@@ -21,9 +21,13 @@
         <div id="container">
             <!-- Header that contains nav section-->
             <header id="header">
-                <h1>ToDoApp</h1><Never let time ruin your efforts>
+                <h1>Never let time ruin your efforts</h1>
                 <!-- nav section-->
                 <nav id="nav">
+                    <div id="logo_wrap">
+                    <div id="logo"><img src="img/logo.jpg" alt="image here"></div>
+                    <div id="logocaption"><h1>TimeLess</h1></div>
+                    </div>
                     <ul>
                         <li><a href="index.php">SignIn</a></li>
                         <li><a href="#">Help</a></li>
