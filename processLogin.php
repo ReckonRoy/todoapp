@@ -18,7 +18,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
         $username = mysql_entities_fix_string($connection, $_POST['username']);
         $password = mysql_entities_fix_string($connection, $_POST['password']);
         
-        $query = "SELECT password, name, surname, username FROM user_data WHERE username='$username'";
+        $query = "SELECT name, surname, username,password,  FROM user_data WHERE username='$username'";
         
         $result = $connection->query($query);
         if(!$result)
