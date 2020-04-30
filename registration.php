@@ -16,7 +16,7 @@ if($connection -> connect_error)
     die($connection -> connect_error);
 }
     
-//check if $_POST['...'] isset and not empty
+//check if $_POST['...'] isset and is not empty
 if(isset($_POST['name']) && isset($_POST['surname'])&& isset($_POST['username']) && isset($_POST['password']) && isset($_POST['cpassword']) && isset($_POST['email']))
 {
     if(!empty($_POST['name']) && !empty($_POST['surname']) && !empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['cpassword']) && !empty($_POST['email']))
@@ -29,6 +29,7 @@ if(isset($_POST['name']) && isset($_POST['surname'])&& isset($_POST['username'])
         $email = mysql_entities_fix_string($connection, $_POST['email']);
         
         $query = "SELECT username FROM user_data WHERE username='$password'";
+        //query the database 
         $result = $connection->query($query);
         if(!$result)
         {

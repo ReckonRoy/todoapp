@@ -36,6 +36,8 @@
                     </ul>
                 </nav>
             </header>
+            <!-- End header section -->
+            
             <!-- Registration form validated through javascript  before submitted to a php file for processing-->
             <div id="section">
                 <div id="registrationForm">
@@ -76,7 +78,7 @@
                     </form>
                 </div>
             </div>
-            
+            <!-- End main section-->
             <footer>
                 
             </footer>

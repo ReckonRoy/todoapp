@@ -5,15 +5,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-require_once 'login.php';
-$connection = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
 
-$query = "SELECT * FROM user_task";
-$result = mysqli_query($connection, $query);
-while($row = mysqli_fetch_assoc($result))
+require_once 'login.php';
+$connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
+if($connection -> connect_error)
 {
-    $data[] = $row;
+    echo json_encode("Could not connect");
 }
-//returning response in JSON format
-echo json_encode($data);
+
+if( !empty($_POST['task_title']) && !empty($_POST['time_vale']) && !empty($_POST['date_val']) && !empty($_POST['descr_val']))
+{
+    $title = $_POST['task_title'];
+    $time = date($_POST['time_vale']);
+    $date = date($_POST['date_val']);
+    $descr = $_POST['descr_val'];
+    
+    $sql = "INSERT INTO user_task SET username='Shingai', title='$title', time='$time', description='$descr', due_date='$date'";
+    $connection -> query($sql);
+    
+    if($connection->connect_error)
+    {
+        $error_array = [false, "Error Message", "Sorry could not create new task"];
+        echo json_encode("error");
+    }  else {
+        $message = [true, "Task has been succesfully added", "New task: ".$title];
+        echo json_encode($message);
+    }
+}
+
 ?>

@@ -40,20 +40,27 @@ and open the template in the editor.
                             <div id="title_div">
                                 <label for="title">Title</label>
                                 <br>
-                                <input type="text" id="task_title">
+                                <input type="text" name="task_title" id="task_title">
                             </div>
                             <div id="time_div">
-                                <label for="time">Time</label>
+                                <label for="due_time">Due Time</label>
                                 <br>
-                                <input type="time" id="time">
+                                <input type="time" name="due_time" id="due_time">
                             </div>
+                            
+                            <div id="due_date_div">
+                                <label for="due_date">Due Date</label>
+                                <br>
+                                <input type="date" name="due_date" id="due_date">
+                            </div>
+                            
                             <div id="task_div">
                                 <label for="description">Description</label>
                                 <br>
                                 <textarea cols="50" rows="5" name="task_descr"></textarea>
                             </div>
                             <div id="task_sub_div">
-                                <input type="submit" id="task_btn" value="create task">
+                                <input type="button" id="task_btn" onclick=" request(this.form)" value="create task">
                             </div>
                         </form>
                     </div>
@@ -73,7 +80,7 @@ and open the template in the editor.
                 </div>
             </div>
             <aside id="div_aside">
-                <div><h1>Hello I am the aside</h1></div>
+                <div id="msg"></div>
             </aside>
 
             <footer>
@@ -104,3 +111,5 @@ and open the template in the editor.
         </script>
     </body>
 </html>
+
+

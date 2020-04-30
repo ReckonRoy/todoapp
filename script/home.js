@@ -4,38 +4,62 @@
  * and open the template in the editor.
  */
 
-var xhp = new XMLHttpRequest();
-var url = 'data.php';
-var method = "GET";
-var asynch = true;
+var ajax = new XMLHttpRequest();
+var msg = document.getElementById('msg');
 
-xhp.open(method, url, asynch);
-//sending ajax request
-xhp.send();
+    
 
-//receiving response from data.php
-xhp.onreadystatechange = function()
+//The ajax request function
+function request(form)
 {
-    if(this.readyState == 4 && this.status == 200)
+    var url = './data.php';
+    var title_val = form.task_title.value;
+    var time_val = form.due_time.value;
+    var date_val = form.due_date.value;
+    var descr_val = form.task_descr.value;
+    
+    
+    //call ready state changed and set is value to response
+    ajax.onreadystatechange = response;
+    ajax.open('POST', url, true);
+    ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    ajax.send('task_title='+ title_val + '&time_vale=' + time_val + '&date_val=' + date_val + '&descr_val=' + descr_val);
+}
+
+function response()
+{
+    if(ajax.readyState == 4)
     {
-        var data = JSON.parse(this.responseText);
-        console.log(data);
-        
-        var html = "";
-        for(var a = 0; a < data.length; a++)
+        if(ajax.status == 200)
         {
-            
-            var title = data[a].title;
-            var time = data[a].time;
-            var description = data[a].description;
-            
-            html += "<tr>";
-            html += "<td>" + title + "</td>";
-            html += "<td>" + time + "</td>";
-            html += "<td>" + description + "</td>";
-            html += "</tr>";
+            var result = JSON.parse(ajax.responseText);
+            if(result[0])
+            {
+                
+                var h2 = result[1];
+                var h3= result[2];
+            }
+            //empty inner html property here
+            //msg.innerHTML = "";
+            make_content(h2, h3 ,msg);
         }
-        
-        document.getElementById('data').innerHTML = html;
     }
+}
+
+function make_content(h2, h3, parentElement)
+{
+    var ptag = document.createElement('p');
+    
+    var h2tag = document.createElement('h2');
+    h2tag.append(h2);
+    
+    var h3tag = document.createElement('h3');
+    h3tag.append(h3);
+    
+    ptag.appendChild(h2tag);
+    ptag.appendChild(h3tag);
+    
+    
+    parentElement.appendChild(ptag);
+    parentElement.className = "div_side";
 }

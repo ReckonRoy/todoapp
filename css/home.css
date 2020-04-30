@@ -166,6 +166,14 @@ nav li
     padding-left: 10%;
     margin-top: 2%;
 }
+
+#due_date_div
+{
+    width: 90%;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 2%;
+}
 #task_div
 {
     width: 90%;
@@ -189,10 +197,16 @@ nav li
     background-color: #bacfc7;
     border-radius: 1em;
 }
+
 #div_aside
 {
     width: 30%;
-    border: 1px solid black;
+    margin-top: 3%;
+    padding: 10px 10px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    border-radius: 1em;
+    border: 1px solid #677e8f;
     float: right;
+    height: 15%;
 }
-
