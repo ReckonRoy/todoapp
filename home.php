@@ -66,11 +66,19 @@ and open the template in the editor.
                     </div>
                     
                     <div id="task">
-                        <div></div>
-                        <div>
+                        <div >
+                            <div id="form_second">
+                                <form>
+                                    <div id="title_div">
+                                        <input type="text" name="taskInput" id="task_title"> <input type="button" id="search" onclick="request_search(this.form)" value="search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="task_b">
                             <table>
                                 <tr>
-                                    <th>Time</th><th>Title</th><th>Description</th>
+                                    <th>Time</th><th>Title</th><th>Description</th><th>Due Date</th>
                                 </tr>
                                 <tbody id="data"><!-- data will be displayed here-->
                                 </tbody>
@@ -79,6 +87,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+            
             <aside id="div_aside">
                 <div id="msg"></div>
             </aside>
@@ -94,6 +103,7 @@ and open the template in the editor.
         ?>
         <script src="script/jquery.js"></script>
         <script type="text/javascript" src="script/home.js"></script>
+        <script type="text/javascript" src="script/home_display.js"></script>
         <script type="text/javascript">
             $( "#form" ).hide( "fast");
             $( "#task" ).hide( "fast");

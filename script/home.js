@@ -40,7 +40,7 @@ function response()
                 var h3= result[2];
             }
             //empty inner html property here
-            //msg.innerHTML = "";
+            msg.innerHTML = "";
             make_content(h2, h3 ,msg);
         }
     }
@@ -58,8 +58,5 @@ function make_content(h2, h3, parentElement)
     
     ptag.appendChild(h2tag);
     ptag.appendChild(h3tag);
-    
-    
     parentElement.appendChild(ptag);
-    parentElement.className = "div_side";
 }

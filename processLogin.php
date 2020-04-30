@@ -1,5 +1,5 @@
 <?php
-
+session_sart();
 require_once 'login.php';
 
 $connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
@@ -18,7 +18,8 @@ if(isset($_POST['username']) && isset($_POST['password']))
         $username = mysql_entities_fix_string($connection, $_POST['username']);
         $password = mysql_entities_fix_string($connection, $_POST['password']);
         
-        $query = "SELECT password, name, surname FROM user_data WHERE username='$username'";
+        $query = "SELECT password, name, surname, username FROM user_data WHERE username='$username'";
+        
         $result = $connection->query($query);
         if(!$result)
         {
@@ -33,7 +34,15 @@ if(isset($_POST['username']) && isset($_POST['password']))
                 echo "password ". $row['password'];
                 if( $row['password']==$token)
                 {
-                    echo $row['name'];  
+                    
+                    $_SESSION['username'] = $row['username'];
+                    $_SESSION['name'] = $row['name'];
+                    $_SESSION['surname'] = $row['surname'];
+                    
+                    $un = $_SESSION['username'];
+                    $sn = $_SESSION['name'];
+                    $ss = $_SESSION['surname'];
+                    header('Locaion: home.php');
                 }else
                 {
                     die("Inavalid username/password combination");

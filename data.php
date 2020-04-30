@@ -19,8 +19,9 @@ if( !empty($_POST['task_title']) && !empty($_POST['time_vale']) && !empty($_POST
     $time = date($_POST['time_vale']);
     $date = date($_POST['date_val']);
     $descr = $_POST['descr_val'];
+    $su = $_SESSION['username'];
     
-    $sql = "INSERT INTO user_task SET username='Shingai', title='$title', time='$time', description='$descr', due_date='$date'";
+    $sql = "INSERT INTO user_task SET username='$su', title='$title', time='$time', description='$descr', due_date='$date'";
     $connection -> query($sql);
     
     if($connection->connect_error)
@@ -32,5 +33,5 @@ if( !empty($_POST['task_title']) && !empty($_POST['time_vale']) && !empty($_POST
         echo json_encode($message);
     }
 }
-
+$connection -> close();
 ?>
