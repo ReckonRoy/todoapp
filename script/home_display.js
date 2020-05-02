@@ -8,7 +8,7 @@
 var ajax = new XMLHttpRequest();
 var data = document.getElementById('data');
 var error_div = document.getElementById("task");
-var tas_div = document.getElementById("task_b");
+var task_div = document.getElementById("task_b");
     
 
 //The ajax request function
@@ -35,7 +35,7 @@ function request_response()
             {
                 var row_total = result[1].length;
                 
-                for(var i = 0; i < row_total; i++)
+                for(i = 0; i < row_total; i++)
                 {
                     var html = "<tr>"
                     + "<td>" + result[1][i].title+"</td>"
@@ -43,14 +43,15 @@ function request_response()
                     + "<td>" + result[1][i].description+"</td>"
                     + "<td>" + result[1][i].due_date+"</td>";
                     + "</tr>";
+                    task_div.innerHTML = "";
                     data.innerHTML = "";
                     content(html, data);
                 }
                 
             }else
             {
-                tas_div.innerHTML = "";
-                error_content(result[1] ,error_div);
+                task_div.innerHTML = "";
+                error_content(result[1] ,task_div);
             } 
         }
     }

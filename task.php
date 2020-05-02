@@ -14,12 +14,12 @@ $connection = @new MySQLi($db_hostname, $db_username, $db_password, $db_database
     {
         die($connection->connect_error);
     }
-if(!empty($_POST['taskInput']))
+
+
+function search($conn, $input)
 {
-    $task = $_POST['taskInput'];
-    
-    $sql = "SELECT title, time, description, due_date FROM user_task WHERE username='$task'";
-    $result = $connection->query($sql);
+    $sql = "SELECT title, time, description, due_date FROM user_task WHERE title='$input'";
+    $result = $conn->query($sql);
     if($result)
     {
         //check num_rows
@@ -37,6 +37,39 @@ if(!empty($_POST['taskInput']))
     }  else {
         //SQL error
     }
-    $connection->close();
+    $conn->close();
 }
+
+function allReasults($conn)
+{
+    $sql = "SELECT title, time, description, due_date FROM user_task";
+    $result = $conn->query($sql);
+    if($result)
+    {
+        //check num_rows
+        if($result -> num_rows == 0)
+        {
+            echo json_encode([false, "No current task are availabe"]);
+        }else{
+            while($each_row = $result -> fetch_assoc())
+            {
+                $all_rows[] = $each_row;
+                
+            }
+            echo json_encode([true, $all_rows]); 
+        }
+        $result->free();
+    }  else {
+        //SQL error
+    }
+    $conn->close();
+}
+
 //free(), close()
+if(!empty($_POST['taskInput']))
+{
+    $task = $_POST['taskInput'];
+    search($connection, $task);
+}  else {
+    allReasults($connection);
+}

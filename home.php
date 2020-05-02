@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -14,6 +15,7 @@ and open the template in the editor.
         
         <div id="container">
             <header id="header">
+                <span><center><h1>Welcome <?php echo $_SESSION['name']." ".$_SESSION['surname'];?></h1></center></span>
                 <nav id="nav">
                     <div id="logo_wrap">
                     <div id="logo"><img src="img/logo.jpg" alt="image here"></div>

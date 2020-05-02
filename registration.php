@@ -54,9 +54,12 @@ if(isset($_POST['name']) && isset($_POST['surname'])&& isset($_POST['username'])
                 $token = hash('ripemd128', "$salt1$password$salt2");
                 $query = "INSERT INTO user_data VALUES('', '$name', '$surname', '$username', '$token', '$email')";
                 $result = $connection -> query($query);
+                
                 if(!$result)
                 {
                     die($connection->error);
+                }else{
+                    header('Location: index.php');
                 }
             }
         }
