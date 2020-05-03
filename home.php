@@ -10,6 +10,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Libre+Franklin:wght@100&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Concert+One&display=swap" rel="stylesheet">  
     </head>
     <body>
         
@@ -68,7 +70,7 @@ and open the template in the editor.
                     </div>
                     
                     <div id="task">
-                        <div >
+                        <div>
                             <div id="form_second">
                                 <form>
                                     <div id="title_div">
@@ -77,16 +79,11 @@ and open the template in the editor.
                                 </form>
                             </div>
                         </div>
-                        <div id="task_b">
-                            <table>
-                                <tr>
-                                    <th>Time</th><th>Title</th><th>Description</th><th>Due Date</th>
-                                </tr>
-                                <tbody id="data"><!-- data will be displayed here-->
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
+                        <div id="task_b">
+                            
+                        </div>
+                    
                 </div>
             </div>
             

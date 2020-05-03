@@ -26,6 +26,8 @@ body
     font-family: Georgrgia, times, serif;
     line-height: 1.4em;
     margin: 0px;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Concert One', cursive;
 }
 
 #container
@@ -157,6 +159,7 @@ nav li
 {
     width: 50%;
     height: 30px;
+    border-radius: 1em;
 }
 
 #time_div
@@ -209,4 +212,49 @@ nav li
     border: 1px solid #677e8f;
     float: right;
     height: 15%;
+}
+
+.divContent
+{
+    border: 1px solid black; 
+    border-radius: 1em;
+    color: #0f0101;
+    padding-top: 5px;
+    padding-left: 3px;
+    line-height: 1.2em;
+    font-family: 'Handlee', cursive;
+    position: relative;
+
+}
+
+.divContent:nth-child(even) 
+{
+  background: #6cf542;
+}
+.divContent:nth-child(odd) 
+{
+  background: #f73025;
+}
+
+.dlt_btn{
+    position: absolute;
+    right: 10px;
+    background-color: black;
+    background-image: url("../img/delete.jpg");
+    border-radius: 1em;
+    width: 25px;
+    height: 25px;
+}
+#task_b
+{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    width: 100%;
+    grid-gap: 1em;
+    margin-top: 18px;
+    padding-left: 18px;
+    margin-left: 18px;
+    background-color: white;
+    height: 55vh;
+    overflow-y: scroll;
 }

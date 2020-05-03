@@ -65,6 +65,10 @@ function allReasults($conn)
     $conn->close();
 }
 
+
+   
+
+
 //free(), close()
 if(!empty($_POST['taskInput']))
 {
@@ -73,3 +77,7 @@ if(!empty($_POST['taskInput']))
 }  else {
     allReasults($connection);
 }
+if(!empty($_POST['title']))
+{
+    echo json_encode($_POST['title']);
+} 
