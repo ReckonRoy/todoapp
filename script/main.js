@@ -1,4 +1,7 @@
-
+function refer()
+{
+    document.location.href = "register.php";
+}
 function validateLogin(form)
 {  
     username_fail = validateUsername(form.username.value);

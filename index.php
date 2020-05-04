@@ -67,7 +67,7 @@ and open the template in the editor.
                         <div id="recoverpwd"><em><a href="password-recovery.php">forgot password</a></em></div>
                             
                         <div id="btn">
-                        <input type="submit" value="signIn" class="btn"> <input type="button" value="signUp" class="btn">
+                        <input type="submit" value="signIn" class="btn"> <input type="button" value="signUp" onclick="refer()" class="btn">
                         </div>
                     </form>
                 </div>
