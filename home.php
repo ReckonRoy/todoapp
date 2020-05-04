@@ -1,4 +1,5 @@
-<?php session_start() ?>
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -14,7 +15,10 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Concert+One&display=swap" rel="stylesheet">  
     </head>
     <body>
-        
+        <?php
+        if(isset($_SESSION['username']))
+        {
+        ?>
         <div id="container">
             <header id="header">
                 <span><center><h1>Welcome <?php echo $_SESSION['name']." ".$_SESSION['surname'];?></h1></center></span>
@@ -98,7 +102,9 @@ and open the template in the editor.
         
         
         <?php
-        // put your code here
+        }else{
+            echo "Please login to view this page";
+        }
         ?>
         <script src="script/jquery.js"></script>
         <script type="text/javascript" src="script/home.js"></script>
