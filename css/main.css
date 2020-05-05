@@ -27,7 +27,10 @@ body
     line-height: 1.4em;
     margin: 0px;
 }
-
+h1, h2, h3, h4, h5
+{
+    font-family: 'Roboto', sans-serif;
+}
 #container
 {
     border: 1px solid white;
@@ -43,9 +46,7 @@ body
     display: block;
     background-color: #bacfc7;
     color: rgb(95, 92, 85);
-    height: 40%;
     width: 100%;
-    position: absolute;
 }
 #logo
 {
@@ -53,6 +54,11 @@ body
     height: 50px;
     margin-top: 5px;
     background-color: #677e8f;
+}
+
+#logoimg
+{
+    border-radius: 5em;
 }
 
 #logocaption{
@@ -64,7 +70,7 @@ body
     clear: both;
     background-color: #677e8f;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0;
     line-height: 2.5em;
 }
 
@@ -101,23 +107,6 @@ nav li
 {
     background-color: #eee;
 }
-#fhead
-{
-    width: 20%;
-    display: block;
-    height: 5%;
-    z-index:1;
-    margin-left: 33%;
-    margin-top: 32%;
-    font-size: 20px;
-    font-weight: bolder;
-    background-color: white;
-    border: 1px solid #402404;
-    position: absolute;
-    padding-top: 5px;
-    text-align: center;
-    border-radius: 2em;
-}
 
 #main
 {
@@ -134,8 +123,7 @@ nav li
     width: 40%;
     display: block;
     margin-left: 30%;
-    margin-top: 35%;
-    border: 1px solid #d4b150;
+    margin-top: 15%;
     position: absolute;
     background-color: white;
     border-radius: 2em;
@@ -153,15 +141,13 @@ nav li
 {
     height: 30px;
     font-size: 10pt;
-    border-radius: 1em;
-    background-color: greenyellow;
     color: black;
 }
 
 #username
 {
     display: block;
-    width: 95%;
+    width: 100%;
     margin-left: 2.5%;
     margin-top: 3%;
     padding-left: 8%;
@@ -170,7 +156,7 @@ nav li
 #password
 {
     display: block;
-    width: 95%;
+    width: 100%;
     margin-left: 2.5%;
     margin-top: 5%;
     padding-left: 8%;    
@@ -181,7 +167,8 @@ nav li
     font-size: 16px;
     letter-spacing: 0px;
     text-align: right;
-    width: 80%;
+    margin-top: 20px;
+    width: 90%;
 }
 
 #msgUsername
@@ -198,14 +185,29 @@ nav li
 {
     font-size: 16px;
     letter-spacing: 0px;
+    text-align: left;
+    margin-top: 50px;
+    width: 100%;
+}
+#reglink
+{
+    display: box;
     text-align: right;
-    width: 80%;
+    margin-left: 170px;
 }
 .label
 {
     letter-spacing: 0.2em;
-    color: green;
     font-weight: bold;
+}
+
+ul{
+    text-align: right;
+}
+
+btn a
+{
+    margin-right: 20%;
 }
 
 .btn
@@ -213,9 +215,10 @@ nav li
     width: 100px;
     height: 35px;
     margin-top: 1px;
-    color:#fae9e8;
+    margin-left: 10%;
+    color: white;
     font-weight: bold;
-    background-color: #677e8f;
+    background-color: #8c03fc;
     border-radius: 1em;
     border: none;
     text-transform: capitalize;

@@ -78,8 +78,8 @@ function request_response()
                 
             }else
             {
-                //task_div.innerHTML = "";
-                //error_content(result[1] ,task_div);
+                task_div.innerHTML = "";
+                error_content(result[1] ,task_div);
             } 
         }
     }
@@ -120,4 +120,4 @@ function error_content(co, el)
    el.innerHTML = co;
 }
 
-request_search();
+setInterval(function(){request_search();}, 1000);

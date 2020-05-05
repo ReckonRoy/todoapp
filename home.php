@@ -78,7 +78,7 @@ and open the template in the editor.
                             <div id="form_second">
                                 <form>
                                     <div id="title_div">
-                                        <input type="text" name="taskInput" id="task_title"> <input type="button" id="search" onclick="request_search(this.form)" value="search">
+                                        <input type="text" name="taskInput" placeholder="Type something..." id="task_title"> <input type="button" id="search" onclick="request_search(this.form)" value="search">
                                     </div>
                                 </form>
                             </div>
@@ -117,11 +117,13 @@ and open the template in the editor.
                 $( "#track_btn" ).click(function() {
                     $( "#form" ).hide( "fast");
                     $( "#task" ).show( "fast");
+                    $( "#task_b" ).show( "fast");
                 });
                 
                 $( "#add_btn" ).click(function() {
                   $( "#form" ).show( "fast");
                   $( "#task" ).hide( "fast");
+                  $( "#task_b" ).hide( "fast");
                   });
         </script>
     </body>

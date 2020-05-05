@@ -21,20 +21,14 @@
         <div id="container">
             <!-- Header that contains nav section-->
             <header id="header">
-                <div id="header_cap"><h1>Never let time ruin your efforts</h1></div>
-                <!-- nav section-->
+                
                 <nav id="nav">
-                    <div id="logo_wrap">
-                    <div id="logo"><img src="img/logo.jpg" alt="image here"></div>
-                    <div id="logocaption"><h1>TimeLess</h1></div>
-                    </div>
-                    <ul>
-                        <li><a href="index.php">SignIn</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">AboutUs</a></li>
-                        <li><a href="register.php">SignUp</a></li></ul>
-                    </ul>
-                </nav>
+                <div id="logo_wrap">
+                    <div id="logo"><img src="img/logo.jpg" alt="image here" id="logoimg"></div>
+                <div id="logocaption"><h1>TimeLess</h1></div>
+                </div>
+                <ul><li><a href="index.php">Login</a></li>|<li><a href="#">Help</a></li>|<li><a href="#">AboutUs</a></li>|<li><a href="register.php">SignUp</a></li></ul></nav>
+                
             </header>
             <!-- End header section -->
             

@@ -39,6 +39,7 @@ body
     position: relative;
     height: 100vh;
     background-color: white;
+    overflow-y: auto;
 }
 
 #header
@@ -256,5 +257,5 @@ nav li
     margin-left: 18px;
     background-color: white;
     height: 55vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
