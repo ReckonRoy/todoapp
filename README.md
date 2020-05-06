@@ -33,7 +33,7 @@ open your web browser and navigate to "localhost/projectName/indexfile"
 PHP, MySQL, Javascript HTML, CSS
 
 ## Authors
-* **Le-Roy Jomgwe** 
+* **Le-Roy Jongwe** 
 
 ## License
 MIT License
