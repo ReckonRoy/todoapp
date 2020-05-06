@@ -3,7 +3,7 @@
 this application runs on php as the backbone of backend, and javascript for front end processing
 Functionality: 
 
-#Key Concepts
+## Key Concepts
 * **User login** 
 * **User registration**
 * **Front end form validation** 
