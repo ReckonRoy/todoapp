@@ -12,7 +12,9 @@ var error_div = document.getElementById("task");
 var task_div = document.getElementById("task_b");
 var tf = document.getElementById('task_title');
 var due_time = document.getElementById('due_time');
-var due_date = document.getElementById('due_date');
+var dueDate = document.getElementById('due_date');
+var description = document.getElementById('descr');
+var task_btn = document.getElementById('task_btn');
 
 //The ajax request function
 function request_search(form)
@@ -99,6 +101,11 @@ function content(title, time, descr, due_date, pE)
    edit_btn.onclick = function()
    {
        tf.value = title;
+       //due_time.value = time;
+       description.value = descr;
+       dueDate.value = "due_date";
+       
+       task_btn.value = 'Update';
        pE.style.display = "none";
        error_div.style.display = "none";
        form_div.style.display = "block";

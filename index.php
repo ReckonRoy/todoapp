@@ -61,9 +61,6 @@ and open the template in the editor.
             </footer>
             
         </div>
-        <?php
-        // put your code here
-        ?>
         <script type="text/javascript" src="script/main.js"></script>
     </body>
 </html>
