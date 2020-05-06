@@ -42,7 +42,8 @@ function search($conn, $input)
 
 function allReasults($conn)
 {
-    $sql = "SELECT title, time, description, due_date FROM user_task";
+    $s_username = $_SESSION['username'];
+    $sql = "SELECT title, time, description, due_date FROM user_task WHERE username='$s_username'";
     $result = $conn->query($sql);
     if($result)
     {

@@ -232,6 +232,8 @@ nav li
     background-color: #0062ff;
     border: none;
     color: white;
+    margin-left: 30%;
+    
 }
 
 #div_aside
@@ -300,4 +302,9 @@ nav li
     background-color: white;
     height: 55vh;
     overflow-y: auto;
+}
+
+#msg
+{
+    
 }
