@@ -2,6 +2,8 @@
 
 this application runs on php as the backbone of backend, and javascript for front end processing
 Functionality: 
+
+#Key Concepts
 * **User login** 
 * **User registration**
 * **Front end form validation** 
@@ -11,6 +13,7 @@ Functionality:
 * **adding data to the database** 
 * **deleting stored data entries**
 * **editing data entries** 
+
 
 ## Getting Started
 open your web browser and navigate to https://github.com/ReckonRoy/todoapp.git
