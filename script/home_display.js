@@ -6,9 +6,11 @@
 
 
 var ajax = new XMLHttpRequest();
+var form_div = document.getElementById("form");
 var data = document.getElementById('data');
 var error_div = document.getElementById("task");
 var task_div = document.getElementById("task_b");
+var tf = document.getElementById('task_title');
 
 //The ajax request function
 function request_search(form)
@@ -89,6 +91,16 @@ function content(title, time, descr, due_date, pE)
 { 
    var divContent = document.createElement('div');
    var button = document.createElement('button');
+   
+   var edit_btn = document.createElement('button');
+   
+   edit_btn.onclick = function()
+   {
+       tf.value = "hello";
+       pE.style.display = "none";
+       error_div.style.display = "none";
+       form_div.style.display = "block";
+   }
    button.onclick = function()
    {
        delete_request(title);
@@ -101,6 +113,10 @@ function content(title, time, descr, due_date, pE)
    var ptag4 = document.createElement('p');
    button.innerText = "";
    button.className = "dlt_btn";
+   edit_btn.className = "edit_btn";
+   edit_btn.innerText = "";
+   
+   divContent.appendChild(edit_btn);
    divContent.appendChild(button);
    ptag.append("Title " + title);
    divContent.appendChild(ptag);

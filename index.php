@@ -47,10 +47,10 @@ and open the template in the editor.
                         <input type="password" placeholder="Password" name="password" size="50" class="textfield" placeholder="Enter Password:">
                         <br>
                         </div>
-                        <div id="recoverpwd"><em><a href="password-recovery.php">forgot password</a></em></div>
+                        <div id="recoverpwd"><a href="password-recovery.php">Forgot password</a></div>
                             
                         <div id="btn">
-                        <input type="submit" value="signIn" class="btn"><a href="register.php" id="reglink">Register</a>
+                        <input type="submit" value="LOG IN" class="btn"><a href="register.php" id="reglink">Register</a>
                         </div>
                     </form>
                 </div>
