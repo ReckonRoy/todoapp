@@ -11,7 +11,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="css/home.css">
-        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Libre+Franklin:wght@100&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Libre+Franklin:wght@100&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Concert+One&display=swap" rel="stylesheet">  
     </head>
     <body>
@@ -24,7 +25,7 @@ and open the template in the editor.
                 <span><center><h1>Welcome <?php echo $_SESSION['name']." ".$_SESSION['surname'];?></h1></center></span>
                 <nav id="nav">
                     <div id="logo_wrap">
-                    <div id="logo"><img src="img/logo.jpg" alt="image here"></div>
+                    <div id="logo"><img src="img/logo.jpg" id="logoimg" alt="image here"></div>
                     <div id="logocaption"><h1>TimeLess</h1></div>
                     </div>
                     <ul>
@@ -46,9 +47,8 @@ and open the template in the editor.
                     <div id="form">
                         <form>
                             <div id="title_div">
-                                <label for="title">Title</label>
                                 <br>
-                                <input type="text" name="task_title" id="task_title">
+                                <input type="text" placeholder="Title" name="task_title" id="task_title">
                             </div>
                             <div id="time_div">
                                 <label for="due_time">Due Time</label>
@@ -63,14 +63,14 @@ and open the template in the editor.
                             </div>
                             
                             <div id="task_div">
-                                <label for="description">Description</label>
-                                <br>
-                                <textarea cols="50" rows="5" name="task_descr"></textarea>
+                                <textarea cols="50" rows="5" name="task_descr" placeholder="Description" id="descr" ></textarea>
                             </div>
                             <div id="task_sub_div">
                                 <input type="button" id="task_btn" onclick=" request(this.form)" value="create task">
                             </div>
                         </form>
+                        
+                        <div id="msg"></div>
                     </div>
                     
                     <div id="task">
@@ -90,11 +90,7 @@ and open the template in the editor.
                     
                 </div>
             </div>
-            
-            <aside id="div_aside">
                 <div id="msg"></div>
-            </aside>
-
             <footer>
 
             </footer>

@@ -12,6 +12,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Register</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/register.css">
             
 
@@ -38,36 +39,30 @@
                     <form action="registration.php" method="POST" onsubmit="return validateRegistration(this)" id="form_f">
                         <div id="nameField">
                             <span id="msgName"></span>
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" placeholder="Name" name="name" id="name">
                         </div>
                         <div id="surnameField">
                             <span id="msgSurname"></span>
-                            <label for="surname">Surname</label>
-                            <input type="text" name="surname" id="surname">
+                            <input type="text"placeholder="Surname" name="surname" id="surname">
                         </div>
                         <div id="usernameField">
                             <span id="msgUsername"></span>
-                            <label for="username">Username</label>
-                            <input type="text" name="username" id="username">
+                            <input type="text" placeholder="Username" name="username" id="username">
                         </div>
                         <div id="pwdField">
                             <span id="msgPassword"></span>
-                            <label for="password">Password</label>
-                            <input type="text" name="password" id="password">
+                            <input type="text" placeholder="Password" name="password" id="password">
                         </div>
                         <div id="cpwdField">
                             <span id="msgconfirm"></span>
-                            <label for="cpassword">Confirm Password</label>
-                            <input type="text" name="cpassword" id="cpassword">
+                            <input type="text" placeholder="Confirm Password" name="cpassword" id="cpassword">
                         </div>
                         <div id="emailField">
                             <span id="msgEmail"></span>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email">
+                            <input type="text" placeholder="Email" name="email" id="email">
                         </div>
                         <div id="register_btn_div">
-                            <input type="submit" value="register" id="register_btn">
+                            <center><input type="submit" value="register" id="register_btn"></center>
                         </div>
                     </form>
                 </div>

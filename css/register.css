@@ -22,7 +22,7 @@ body
     color: #666666;
     background-color: #c6cbcf;
     background-position: center;
-    font-family: Georgrgia, times, serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.4em;
     margin: 0px;
 }
@@ -50,7 +50,7 @@ body
     float:left;
     height: 50px;
     margin-top: 5px;
-    background-color: #677e8f;
+    background-color: #05acff;
 }
 
 #logoimg
@@ -61,21 +61,36 @@ body
 #logocaption{
     float:left;
     margin-top: 1%;
+    padding-left: 0.3em;
+    color: white;
 }
+#nav a:hover
+{
+    color: #034754;
+    text-decoration: none;
+}
+
+#nav a:active
+{
+    color: #06275c;
+    text-decoration: none;
+}
+
 #nav
 {
     clear: both;
-    background-color: #677e8f;
-    text-align: center;
+    background-color: #05acff;
+    text-align: right;
     margin-top: 0;
     line-height: 2.5em;
+    padding-left: 0.5em;
 }
 
 #nav a
 {
     letter-spacing: 0.2em;
     word-spacing: 0.1em;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 1.2em;
     color:#fae9e8;
     
@@ -83,7 +98,6 @@ body
 ul
 {
     padding: 5px;
-    text-align: right;
     
 }
 
@@ -135,30 +149,73 @@ nav li
     width: 100%;
     margin-top: 5%;
 }
+#msgName
+{
+    display: block;
+    font-size: 16px; 
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
 #surnameField
 {
     width: 100%;
     margin-top: 5%;
+}
+#msgSurname
+{
+    display: block;
+    font-size: 16px; 
+    margin-left: 5%;
+    margin-bottom: 3%;
 }
 #usernameField
 {
     width: 100%;
     margin-top: 5%;
 }
+#msgUsername
+{
+    display: block;
+    font-size: 16px; 
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
 #pwdField
 {
     width: 100%;
     margin-top: 5%;
 }
+#msgPassword
+{
+    display: block;
+    font-size: 16px; 
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
 #cpwdField
 {
     width: 100%;
     margin-top: 5%;
 }
+#msgconfirm
+{
+    display: block;
+    font-size: 16px; 
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
 #emailField
 {
     width: 100%;
     margin-top: 5%;
+}
+#msgEmail
+{
+    display: block;
+    font-size: 16px; 
+    margin-left: 5%;
+    margin-bottom: 3%;
 }
 #register_btn_div
 {
@@ -166,15 +223,28 @@ nav li
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
 #register_btn
 {
+    -webkit-transition: width 0.3s ease-in-out;
     width: 100px;
     height: 35px;
     margin-top: 1px;
     color:#fae9e8;
     font-weight: bold;
-    background-color: #677e8f;
+    background-color: #0084ff;
+    border-radius: 1em;
+    border: none;
+    text-transform: capitalize;
+}
+
+#register_btn:focus
+{
+    width: 110px;
+    height: 40px;
+    margin-top: 1px;
+    color:#fae9e8;
+    font-weight: bold;
+    background-color: #0084ff;
     border-radius: 1em;
     border: none;
     text-transform: capitalize;
@@ -187,20 +257,12 @@ label
 }
 #form_f input[type=text]
 {
-    width: 50%;
+    width: 90%;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
-    border-radius: 1em;
     border: 1px solid #677e8f;
-    margin-left: 5%;
-    padding: 3px 3px;
-}
-
-#form_f input[type=text]:focus
-{
-    width: 60%;
+    margin-left: 3%;
+    padding: 5px 5px;
     height: 30px;
-    padding: 5x 5px;
-    border-radius: 1em;
+    padding: 5px 5px;
 }
-

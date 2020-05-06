@@ -69,15 +69,13 @@ h1, h2, h3, h4, h5
 }
 #nav a:hover
 {
-    background-color: #034754;
-    color: white;
+    color: #034754;
     text-decoration: none;
 }
 
 #nav a:active
 {
-    background-color: #06275c;
-    color: white;
+    color: #06275c;
     text-decoration: none;
 }
 
@@ -175,6 +173,7 @@ nav li
     height: 30px;
     font-size: 10pt;
     color: black;
+    padding: 5px 5px;
 }
 
 #username
