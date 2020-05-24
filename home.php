@@ -39,14 +39,17 @@ and open the template in the editor.
             <div id="main">
                 <div id="wrapper">
                     <div id="add_btn_div">
-                        <input type="button" value="Add New Task" id="add_btn">
+                        <input type="button" value="ADD NEW TASK" id="add_btn">
                     </div>
                     <div id="track_btn_div">
-                        <input type="button" value="Track My Task" id="track_btn">
+                        <input type="button" value="TRACK MY TASK" id="track_btn">
                     </div>
                     <div id="form">
                         <form>
+                            <fieldset>
+                                <legend>Create Task:</legend>
                             <div id="title_div">
+                                <label for="due_time">Name</label>
                                 <br>
                                 <input type="text" placeholder="Title" name="task_title" id="task_title">
                             </div>
@@ -63,11 +66,14 @@ and open the template in the editor.
                             </div>
                             
                             <div id="task_div">
+                                <label for="due_time">Description</label>
+                                <br>
                                 <textarea cols="50" rows="5" name="task_descr" placeholder="Description" id="descr" ></textarea>
                             </div>
                             <div id="task_sub_div">
                                 <input type="button" id="task_btn" onclick=" request(this.form)" value="create task">
                             </div>
+                            </fieldset>
                         </form>
                         
                         <div id="msg"></div>
@@ -77,9 +83,12 @@ and open the template in the editor.
                         <div>
                             <div id="form_second">
                                 <form>
+                                    <fieldset>
+                                        <legend>Search for Task:</legend>
                                     <div id="title_div">
                                         <input type="text" name="taskInput" placeholder="Type something..." id="task_title"> <input type="button" id="search" onclick="request_search(this.form)" value="search">
                                     </div>
+                                    </fieldset>
                                 </form>
                             </div>
                         </div>

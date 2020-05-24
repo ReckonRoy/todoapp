@@ -25,6 +25,7 @@ function request_search(form)
     //call ready state changed and set is value to response
     ajax.onreadystatechange = request_response;
     ajax.open('POST', url, true);
+    
     ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     ajax.send('taskInput='+ title_val);
 }
@@ -48,12 +49,10 @@ function delete_response()
         if(ajax.status == 200)
         {
             var result = JSON.parse(ajax.responseText);
-            
-            alert(result);
             }else
             {
-                //task_div.innerHTML = "";
-                //error_content(result[1] ,task_div);
+                task_div.innerHTML = "";
+                error_content(result[1] ,task_div);
         } 
     }
 }
@@ -74,9 +73,9 @@ function request_response()
                 for(i = 0; i < row_total; i++)
                 {
                     var title = result[1][i].title;
-                    var time = "Time " + result[1][i].time;
-                    var descr = "Description " + result[1][i].description;
-                    var due_date = "Due date " + result[1][i].due_date;
+                    var time = result[1][i].time;
+                    var descr = result[1][i].description;
+                    var due_date = result[1][i].due_date;
                     error_div.innerHTML;
                     
                     content(title, time, descr, due_date, task_div);
@@ -101,9 +100,9 @@ function content(title, time, descr, due_date, pE)
    edit_btn.onclick = function()
    {
        tf.value = title;
-       //due_time.value = time;
+       due_time.value = time;
        description.value = descr;
-       dueDate.value = "due_date";
+       dueDate.value = due_date;
        
        task_btn.value = 'Update';
        pE.style.display = "none";
@@ -127,13 +126,13 @@ function content(title, time, descr, due_date, pE)
    
    divContent.appendChild(edit_btn);
    divContent.appendChild(button);
-   ptag.append("Title " + title);
+   ptag.append("Title: " + title);
    divContent.appendChild(ptag);
-   ptag2.append(time);
+   ptag2.append("Time: " + time);
    divContent.appendChild(ptag2);
-   ptag3.append(descr);
+   ptag3.append("Description: " + descr);
    divContent.appendChild(ptag3);
-   ptag4.append(due_date);
+   ptag4.append("Due Date: " + due_date);
    divContent.appendChild(ptag4);
    pE.appendChild(divContent);
    

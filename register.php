@@ -28,7 +28,7 @@
                     <div id="logo"><img src="img/logo.jpg" alt="image here" id="logoimg"></div>
                 <div id="logocaption"><h1>TimeLess</h1></div>
                 </div>
-                <ul><li><a href="index.php">Login</a></li>|<li><a href="#">Help</a></li>|<li><a href="#">AboutUs</a></li>|<li><a href="register.php">SignUp</a></li></ul></nav>
+                <ul><li><a href="index.php">Login</a></li> <li><a href="#">Help</a></li> <li><a href="#">AboutUs</a></li> <li><a href="register.php">SignUp</a></li></ul></nav>
                 
             </header>
             <!-- End header section -->
@@ -36,6 +36,7 @@
             <!-- Registration form validated through javascript  before submitted to a php file for processing-->
             <div id="section">
                 <div id="registrationForm">
+                    <div id="regHeader"><center><h2>REGISTRATION FORM<h2></center></div>
                     <form action="registration.php" method="POST" onsubmit="return validateRegistration(this)" id="form_f">
                         <div id="nameField">
                             <span id="msgName"></span>
@@ -49,27 +50,27 @@
                             <span id="msgUsername"></span>
                             <input type="text" placeholder="Username" name="username" id="username">
                         </div>
-                        <div id="pwdField">
-                            <span id="msgPassword"></span>
-                            <input type="text" placeholder="Password" name="password" id="password">
-                        </div>
-                        <div id="cpwdField">
-                            <span id="msgconfirm"></span>
-                            <input type="text" placeholder="Confirm Password" name="cpassword" id="cpassword">
-                        </div>
                         <div id="emailField">
                             <span id="msgEmail"></span>
                             <input type="text" placeholder="Email" name="email" id="email">
                         </div>
+                        <div id="pwdField">
+                            <span id="msgPassword"></span>
+                            <input type="password" placeholder="Password" name="password" id="password">
+                        </div>
+                        <div id="cpwdField">
+                            <span id="msgconfirm"></span>
+                            <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword">
+                        </div>
                         <div id="register_btn_div">
-                            <center><input type="submit" value="register" id="register_btn"></center>
+                            <center><input type="submit" value="REGISTER" id="register_btn"></center>
                         </div>
                     </form>
                 </div>
             </div>
             <!-- End main section-->
-            <footer>
-                
+            <footer class="footer">
+                <center>copyright 2020</center>
             </footer>
             
         </div>

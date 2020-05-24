@@ -13,15 +13,26 @@ var msg = document.getElementById('msg');
 function request(form)
 {
     var url = './data.php';
+    var url2 = './update.php';
     var title_val = form.task_title.value;
     var time_val = form.due_time.value;
     var date_val = form.due_date.value;
     var descr_val = form.task_descr.value;
     
     
+    
     //call ready state changed and set is value to response
     ajax.onreadystatechange = response;
-    ajax.open('POST', url, true);
+    
+    if(task_btn.value === 'Update')
+    {
+        alert("button clicked");
+        ajax.open('POST', url2, true);
+        
+    }else if(task_btn.value === 'create task')
+    {
+        ajax.open('POST', url, true);
+    }
     ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     ajax.send('task_title='+ title_val + '&time_vale=' + time_val + '&date_val=' + date_val + '&descr_val=' + descr_val);
 }
@@ -30,15 +41,26 @@ function response()
 {
     if(ajax.readyState == 4)
     {
+        
         if(ajax.status == 200)
         {
             var result = JSON.parse(ajax.responseText);
-            if(result[0])
+            if(task_btn.value === 'create task')
             {
-                
-                var h2 = result[1];
-                var h3= result[2];
+                if(result[0])
+                {
+                    var h2 = result[1];
+                    var h3= result[2];
+                }
+            }else
+            {
+                if(result[0])
+                {
+                    var h2 = result[1];
+                    var h3 = "";
+                }
             }
+            
             //empty inner html property here
             msg.innerHTML = "";
             make_content(h2, h3 ,msg);

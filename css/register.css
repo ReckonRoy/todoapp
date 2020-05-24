@@ -11,6 +11,7 @@ header, section, footer, aside, article, nav, figure
 {
     display: block;
 }
+
 *
 {
     margin: 0;
@@ -34,7 +35,6 @@ body
     width: 80%;
     margin: 0px auto 0px auto;
     position: relative;
-    height: 100vh;
     background-color: white;
 }
 
@@ -133,13 +133,17 @@ nav li
     width: 100%;
 }
 
+#regHeader
+{
+    margin-top: 50px;
+}
+
 #form_f
 {
-    margin-top: 20px;
+    margin-top: 70px;
     width: 40%;
     display: block;
     margin-left: 30%;
-    border: 1px solid #d4b150;
     background-color: white;
     border-radius: 2em;
 }
@@ -228,20 +232,21 @@ nav li
     -webkit-transition: width 0.3s ease-in-out;
     width: 100px;
     height: 35px;
-    margin-top: 1px;
+    margin-top: 20px;
     color:#fae9e8;
     font-weight: bold;
     background-color: #0084ff;
     border-radius: 1em;
     border: none;
     text-transform: capitalize;
+    
 }
 
 #register_btn:focus
 {
     width: 110px;
     height: 40px;
-    margin-top: 1px;
+    margin-top: 20px;
     color:#fae9e8;
     font-weight: bold;
     background-color: #0084ff;
@@ -265,4 +270,24 @@ label
     padding: 5px 5px;
     height: 30px;
     padding: 5px 5px;
+}
+
+#form_f input[type=password]
+{
+    width: 90%;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    border: 1px solid #677e8f;
+    margin-left: 3%;
+    padding: 5px 5px;
+    height: 30px;
+    padding: 5px 5px;
+}
+
+.footer
+{
+    background-color: #515c6e;
+    color: white;
+    margin-top: 20px;
+    padding: 20px 20px;
 }

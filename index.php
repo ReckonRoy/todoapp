@@ -22,7 +22,7 @@ and open the template in the editor.
                     <div id="logo"><img src="img/logo.jpg" alt="image here" id="logoimg"></div>
                 <div id="logocaption"><h1>TimeLess</h1></div>
                 </div>
-                <ul><li><a href="index.php">Login</a></li>|<li><a href="#">Help</a></li>|<li><a href="#">AboutUs</a></li>|<li><a href="register.php">SignUp</a></li></ul></nav>
+                <ul><li><a href="index.php">Login</a></li> <li><a href="#">Help</a></li> <li><a href="#">AboutUs</a></li> <li><a href="register.php">SignUp</a></li></ul></nav>
                 
             </header>
         

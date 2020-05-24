@@ -43,8 +43,8 @@ body
 #header
 {
     display: block;
-    background-color: #bacfc7;
-    color: rgb(95, 92, 85);
+    background-color: #0a013d;
+    color: #98a859;
     width: 100%;
 }
 #logo
@@ -80,7 +80,7 @@ body
 #nav
 {
     clear: both;
-    background-color: #05acff;
+    background-color: #0a013d;
     text-align: right;
     margin-top: 0;
     line-height: 2.5em;
@@ -134,10 +134,10 @@ nav li
     width: 90%;
     height: 20%;
     margin-left: 5%;
-    background-color: #00ff44;
+    background-color: #057a18;
     border: none;
     height: 35px;
-    color: blueviolet;
+    color: white;
 }
 
 #track_btn_div
@@ -151,7 +151,7 @@ nav li
     width: 90%;
     height: 20%;
     margin-left: 5%;
-    background-color: #ff002b;
+    background-color: #057a18;
     border: none;
     height: 35px;
     color: white;
@@ -262,6 +262,10 @@ nav li
 
 }
 
+.divContent
+{
+    padding: 10px 10px;
+}
 .divContent:nth-child(even) 
 {
   background: #6cf542;
