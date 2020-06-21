@@ -125,12 +125,14 @@ and open the template in the editor.
                     $( "#form" ).hide( "fast");
                     $( "#task" ).show( "fast");
                     $( "#task_b" ).show( "fast");
+                    $("#sort").show("fast");
                 });
                 
                 $( "#add_btn" ).click(function() {
                   $( "#form" ).show( "fast");
                   $( "#task" ).hide( "fast");
                   $( "#task_b" ).hide( "fast");
+                  $("#sort").hide("fast");
                   });
         </script>
     </body>
