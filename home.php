@@ -16,6 +16,7 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Concert+One&display=swap" rel="stylesheet">  
     </head>
     <body>
+        <button onclick="request_sort_search();" class="sort" id="sort">SORT</button>
         <?php
         if(isset($_SESSION['username']))
         {
@@ -114,6 +115,7 @@ and open the template in the editor.
         <script src="script/jquery.js"></script>
         <script type="text/javascript" src="script/home.js"></script>
         <script type="text/javascript" src="script/home_display.js"></script>
+        <script type="text/javascript" src="script/home_sort_display.js"></script>
         <script type="text/javascript">
             $( "#form" ).hide( "fast");
             $( "#task" ).hide( "fast");

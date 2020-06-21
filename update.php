@@ -25,7 +25,7 @@ if( !empty($_POST['task_title']) && !empty($_POST['time_vale']) && !empty($_POST
     $result = $connection -> query($sql);
     if($result)
     {
-        $message_success = [true, "task has been successfuly updated"];
+        $message_success = [true, "task has been successfuly updated", "Updated task: ".$title];
         echo json_encode($message_success);
     }  else {
         $message_error = [false, "Failed to update task please try again later"];

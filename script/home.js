@@ -26,8 +26,8 @@ function request(form)
     
     if(task_btn.value === 'Update')
     {
-        alert("button clicked");
         ajax.open('POST', url2, true);
+        task_btn.value = 'create task';
         
     }else if(task_btn.value === 'create task')
     {

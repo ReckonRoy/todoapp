@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-
+var sort_btn = document.getElementById('sort');
 var ajax = new XMLHttpRequest();
 var form_div = document.getElementById("form");
 var data = document.getElementById('data');
@@ -72,6 +72,7 @@ function request_response()
                 task_div.innerHTML = '';
                 for(i = 0; i < row_total; i++)
                 {
+
                     var title = result[1][i].title;
                     var time = result[1][i].time;
                     var descr = result[1][i].description;
@@ -80,7 +81,11 @@ function request_response()
                     
                     content(title, time, descr, due_date, task_div);
                 }
-                
+
+                if(task_div.innerHTML !== '')
+                {
+                    sort_btn.style.display = 'block';
+                }
             }else
             {
                 task_div.innerHTML = "";
